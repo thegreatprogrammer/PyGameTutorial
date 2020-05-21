@@ -1,0 +1,14 @@
+WIDTH = 800
+HEIGHT = 400
+TITLE = "Facilito Game "
+
+# COLORES
+
+BLACK = (0,0,0)
+GREEN = (69,184,61)
+BLUE = (78,137,193)
+RED = (184,61,88)
+
+PLAYER_GRAV = 1.2
+
+SPEED = 0.002
