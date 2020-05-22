@@ -1,12 +1,13 @@
+import os
 import pygame
 from .config import *
 
 class Wall(pygame.sprite.Sprite):
 
-    def __init__(self, left, bottom):
+    def __init__(self, left, bottom, dir_images):
         pygame.sprite.Sprite.__init__(self)
 
-        self.image = pygame.Surface((40,80))
+        self.image = pygame.image.load( os.path.join(dir_images,'wall.png') )
 
         self.image.fill(RED)
 
