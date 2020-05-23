@@ -1,4 +1,5 @@
 import pygame
+import os
 from .config import *
 
 class Player(pygame.sprite.Sprite):
@@ -9,9 +10,8 @@ class Player(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         self.images = (
-            pygame.image.load( os.path.join(dir_images,'player1.png') )
-            pygame.image.load( os.path.join(dir_images,'jump.png') )
-
+            pygame.image.load(os.path.join(dir_images,'player1.png') ),
+            pygame.image.load(os.path.join(dir_images,'jump.png') )
         )
         self.image = self.images[0]
 

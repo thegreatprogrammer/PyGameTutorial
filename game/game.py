@@ -25,7 +25,7 @@ class Game1:
 
         self.dir = os.path.dirname(__file__)
         self.dir_sound = os.path.join(self.dir, 'sources/sounds')
-        self.dir_images 0 os.path.join(self.dir, 'sources/sprites')
+        self.dir_images = os.path.join(self.dir, 'sources/sprites')
 
     def start(self):
         self.menu()
@@ -35,9 +35,10 @@ class Game1:
         self.score = 0
         self.level = 0
         self.playing = True
+        self.background = pygame.image.load(os.path.join(self.dir_images,'background.png'))
+
         self.generate_elements()
         self.run()
-        self.backgruoun = pygma.image.load ( os.path.join(self.dir_images,'background.png') )
 
     def generate_elements(self):
         self.platform = Platform()
